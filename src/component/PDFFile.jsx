@@ -11,7 +11,9 @@ Font.register({
 const styles = StyleSheet.create({
 
   container: {
-
+      // position:"relative",
+      // overflow:"hidden",
+      // boxSizing: "borderBox",
       mixWidth: 1440,
       height: 1330,
       background: `#b6b9bf`,
@@ -22,6 +24,9 @@ const styles = StyleSheet.create({
 
     },
     body: {
+      position:"relative",
+      overflow:"hidden",
+      boxSizing: "borderBox",
       display: "block",
       width: 900,
       height: 1273,
@@ -100,6 +105,24 @@ const styles = StyleSheet.create({
     display: "block",
     marginTop: 24,
     marginBottom: 24,
+    opacity: 0.3
+  },
+  hz4:{
+    height:1,
+    width: 872,
+    backgroundColor: "black",
+    display: "block",
+    marginTop: 25,
+    marginBottom: 62,
+    opacity: 0.3
+  },
+  hz5:{
+    height:1,
+    width: 300,
+    backgroundColor: "black",
+    display: "block",
+    marginTop: 0,
+    marginBottom: 30,
     opacity: 0.3
   },
   bodyTop:{
@@ -212,8 +235,59 @@ const styles = StyleSheet.create({
     color: '#18181B',
     fontFamily: "Inter",
     float: "left"
-  }
+  },
+  bodyBodyB6:{
+    fontSize:14,
+    color: '#18181B',
+    fontFamily: "Inter",
+    float: "left",
+    marginRight: 99
+  },
+// .........................
+  bottom:{
+  position: 'absolute',
+  left: 611
+  },
+  bottom1:{
+    display: "block",
+    overflow: "hidden",
+    marginBottom: 16
 
+  },
+  bottomB1:{
+    float: "left",
+    marginRight: 69,
+    fontSize: 14,
+    fontFamily: "Inter"
+  },
+  bottomB3:{
+    float: "left",
+    marginRight: 98,
+    fontSize: 14,
+    fontFamily: "Inter"
+  },
+  bottomB2:{
+    float: "left",
+    fontSize: 14,
+    fontFamily: "Inter"
+  },
+  bottomEnd:{
+    display: "block",
+    overflow:"hidden"
+  },
+  bottomE:{
+    float: "left",
+    fontSize: 16,
+    color: '#18181B',
+    fontWeight: 600,
+    marginRight: 114,
+  },
+  bottomE1:{
+    float: "left",
+    fontSize: 16,
+    color: '#18181B',
+    fontWeight: 600,
+  }
 })
 
 
@@ -269,6 +343,29 @@ const PDFFile = () => {
           <Text style={styles.bodyBodyB5}>€ 39,32</Text>
         </View>
         <Text style={styles.hz3}></Text>
+        <View style={styles.bodyBody1}>
+          <Text style={styles.bodyBodyB6}>Redirect instellen. Wordpress memory limit<br></br> uitbreiden. Contact opnemen met Niels.</Text>
+          <Text style={styles.bodyBodyB2}>€ 32,50</Text>
+          <Text style={styles.bodyBodyB3}>€ 6,80</Text>
+          <Text style={styles.bodyBodyB4}>21%</Text>
+          <Text style={styles.bodyBodyB5}>€ 39,32</Text>
+        </View>
+        <Text style={styles.hz3}></Text>
+        <View style={styles.bottom}>
+          <View style={styles.bottom1}>
+            <Text style={styles.bottomB1}>Totaal excl. btw</Text>
+            <Text style={styles.bottomB2}>€ 65</Text>
+          </View>
+          <View style={styles.bottom1}>
+            <Text style={styles.bottomB3}>Totaal btw</Text>
+            <Text style={styles.bottomB2}>€ 13,60</Text>
+          </View>
+          <Text style={styles.hz5}></Text>
+          <View style={styles.bottomEnd}>
+            <Text style={styles.bottomE}>Totaal</Text>
+            <Text style={styles.bottomE1}>€ 78,65</Text>
+          </View>
+        </View>
       </Page>
     </Document>
 
